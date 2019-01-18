@@ -1,0 +1,10 @@
+[package]
+name = "isda-sys"
+version = "0.1.0"
+authors = ["Jake Schurch <jakeschurch@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.46.0"
+cc = "1.0.0"
