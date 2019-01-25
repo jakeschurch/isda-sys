@@ -2,8 +2,15 @@
 name = "isda-sys"
 version = "0.1.0"
 authors = ["Jake Schurch <jakeschurch@gmail.com>"]
+license = "MIT"
 edition = "2018"
+repository = "https://www.github.com/jakeschurch/isda-sys"
 build = "build.rs"
+
+[badges]
+travis-ci = { repository = "jakeschurch/isda-sys" }
+coveralls = { repository = "jakeschurch/isda-sys" }
+maintenance = { status = "experimental" }
 
 [build-dependencies]
 bindgen = "0.46.0"
