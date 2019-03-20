@@ -91,7 +91,6 @@ TDate JpmcdsDate(long year,  /* (I) Year */
 )
 {
     static char routine[] = "JpmcdsDate";
-    printf("Mandeep: Inside the jpmcdsDate function\n");
     TMonthDayYear mdy;
     TDate date; /* returned */
 
@@ -104,7 +103,6 @@ TDate JpmcdsDate(long year,  /* (I) Year */
         JpmcdsErrMsg("%s: Failed.\n", routine);
         date = FAILURE;
     }
-    printf("The date is ######### %ld", date);
     return date;
 }
 
