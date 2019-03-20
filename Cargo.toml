@@ -14,4 +14,7 @@ maintenance = { status = "experimental" }
 
 [build-dependencies]
 bindgen = "0.46.0"
-cc = "1.0.0"
+cc = {version="1.0.0", features = ["parallel"]}
+
+[dependencies]
+libc = "0.2.48"

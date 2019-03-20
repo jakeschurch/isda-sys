@@ -56,6 +56,8 @@ pub fn main() {
         .file("isda_src/lib/src/zr2coup.c")
         .file("isda_src/lib/src/zr2fwd.c")
         .include("isda_src/lib/include/isda")
+        .define("LINUX", None) // TODO: Add entry path for windows
+        .warnings(false)
         .static_flag(true)
         .compile("libcds.a");
 
